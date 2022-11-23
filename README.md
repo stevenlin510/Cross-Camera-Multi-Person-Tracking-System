@@ -5,7 +5,7 @@
 * Implementation by **Service Systems Technology Center, Industrial Technology Research Institute**, Taiwan. 
 * We develop a client-server person re-identification system to track person under 4 ipcams in a single room, eventaully we have 3 three rooms and 12 ipcams. 
 
-## Operation System 
+## Operating System 
 - [x] Windows 10
 - [x] Ubuntu 18.04
 
