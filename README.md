@@ -2,8 +2,8 @@
 
 ## Introduction 
 
-* Implementation by **Service Systems Technology Center, Industrial Technology Research Institute**, Taiwan. 
-* We develop a client-server person re-identification system to track person under 4 ipcams in a single room, eventaully we have 3 three rooms and 12 ipcams. 
+* Implementation by **Wei-Cheng Lin**, Service Systems Technology Center, Industrial Technology Research Institute, Taiwan. 
+* Develop a client-server person re-identification system to track people under 4 ipcams in a single room. In our setting, we have overall 3 rooms and 12 ipcams. 
 
 ## Operating System 
 - [x] Windows 10
@@ -12,17 +12,17 @@
 ## Install
 
 ```shell 
-    conda create -n reid python=3.7
-    conda activate reid
-    pip install -r requirements.txt
+conda create -n reid python=3.7
+conda activate reid
+pip install -r requirements.txt
 ```
 Test under **Pytorch 1.7 & Cuda 11.0**, please intall them from their offical website.
 
 Clone the [TorchReid](https://github.com/KaiyangZhou/deep-person-reid.git) repository and build it from source. 
 ```shell 
-    git clone https://github.com/KaiyangZhou/deep-person-reid.git
-    cd deep-person-reid
-    python setup.py develop
+git clone https://github.com/KaiyangZhou/deep-person-reid.git
+cd deep-person-reid
+python setup.py develop
 ```
 
 ## Configuration
@@ -34,7 +34,7 @@ Download the model weights (you prefer) and put them into `weight` folder.
 
 *Rename the reid model weight into `osnet_ain_x1_0.pth` and `osnet_x1_0.pth`, respectively*
 
-Head to `config.py` file, and modify the ipcam address and additional setup as you want. 
+Head to `config.py` file, and modify the ipcam's address and additional setup as you want. 
 
 We use **four** ipcams as our default setup.
 
@@ -42,12 +42,12 @@ We use **four** ipcams as our default setup.
 
 * Step 1 : In the client computer, run 
 ```shell
-    python client.py
+python client.py
 ```
 
 * Step 2 : In the server computer, run
 ```shell
-    python server.py
+python server.py
 ```
 **Be sure to run the `client.py` file before runing the `server.py` file.**
 
